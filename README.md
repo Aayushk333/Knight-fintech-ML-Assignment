@@ -17,3 +17,17 @@ The dataset is divided into 2 parts training csv file and test csv file.The trai
 * region_2 - Sometimes there are more specific regions specified within a wine-growing area (ie Rutherford inside the Napa        Valley), but this value can sometimes be blank.
 * winery - The winery that made the wine
 * variety - The type of grapes used to make the wine. Dependent variable for task 2 of the assignment
+
+
+# 2. My Insights
+
+Some actionable insights from the Data provided are : 
+
+1. It is a supervised learning problem as the dataset is labelled and we need to predict the variety of wines(target            variable) using the input variables given in the dataset.
+2. The review_description feature can be used to predict the variety of wines using Text classification approach i.e            sequential models can be used.
+3. If we take the review descriptions as the input and the variety of wine as the output , then we can observe that there is    a many-to-one relationship as the input are a sequence of words and output is a single class or label. 
+4. It is a multi-class text classification problem as there are a total of 28 categories of wine. 
+5. By visualizing data with the help of bar graphs, it was observed that the maximum training examples belong to the ‘Pinot    Noir’ class of the wine variety and the minimum belong to the ‘Gamay’ class of the wine variety.
+6. Some attributes of the dataset contains NaN or Null values. But our input variable i.e. review_description  contains no      NULL entries. 
+7. The review_title feature can be used to extract the vintages. Thereafter we can create a new feature as vintage in the      dataset. Also there are some review titles which do not have a vintage specified. 
+8. The country attribute can be converted into a 3-letter or 2-letter country code which can further be assigned a numeric      value to be used as an input variable for predicting the output. (Although I have not used it in this case)
