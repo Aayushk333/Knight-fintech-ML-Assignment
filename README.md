@@ -50,3 +50,20 @@ So, I have used another encoding step;  one that represents the relationships b
 
 * similar words have similar embeddings and a convolution operation is just a linear operation on these vectors. So, when a convolutional kernel is applied to different sets of similar words, it produces a similar output value!
 
+### 1D convolutions
+
+To process an entire sequence of words, these kernels slide down a list of word embeddings, in sequence. This is called a 1D convolution because the kernel is moving in only one dimension: time.
+
+
+## 4. Results and Observations
+
+• The model has been trained on 66125 training examples and validated on 16532 samples.
+• Total size of vocabulary is 4000 words and each word embedding is 256 features long.
+• Total epochs the model have consumed before earlystopping callback stops the training are 17.
+• Optimizer used : Adam optimiser
+• Activation Function used : Relu and Softmax (in the output layer)
+• Loss function used : Sparse Categorical Cross Entropy
+• The training loss was reduced to 0.1635 while the validation loss attained is 0.9654.
+• The model was able to achieve a training accuracy of 94.8% while the validation accuracy attained was 71.29%. This clearly indicates that the model is overfitting and is not able to generalise well despite the use of a regularisation technique such as dropout layer.
+• The training history curves have been plotted to demonstrate the performance of the model.
+
